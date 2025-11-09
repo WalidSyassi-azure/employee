@@ -3,7 +3,7 @@ services:
     name: employee-proxy
     env: python
     plan: free
-    region: oregon   # pick your region
+    region: frankfurt
     buildCommand: "pip install -r requirements.txt"
     startCommand: "gunicorn -b 0.0.0.0:$PORT -w 2 -k gthread --threads 8 employee_proxy:app"
     healthCheckPath: "/health"
@@ -18,4 +18,5 @@ services:
         value: "<set-in-dashboard>"
       - key: ODOO_PASSWORD
         value: "<set-in-dashboard>"
+
 
