@@ -10,8 +10,6 @@ services:
     envVars:
       - key: SECRET_KEY
         generateValue: true
-      - key: PROXY_EMAIL
-        value: "<set-in-dashboard>"
       - key: PROXY_PASSWORD
         value: "<set-in-dashboard>"
       - key: ODOO_BASE_URL
@@ -20,3 +18,4 @@ services:
         value: "<set-in-dashboard>"
       - key: ODOO_PASSWORD
         value: "<set-in-dashboard>"
+
