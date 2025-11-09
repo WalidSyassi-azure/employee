@@ -3,3 +3,5 @@ gunicorn
 requests
 werkzeug
 beautifulsoup4
+lxml
+html5lib
